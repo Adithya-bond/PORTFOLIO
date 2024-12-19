@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.about{
+    width: 100%;
+    height: 90vh;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.about>.sslc{
+    width: 25%;
+    height: 70%;
+    /* background-color: rgb(192, 192, 192); */
+    border: 0px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.about>.sslc>img{
+    height: 40%;
+    width: 40%;
+}
+.about>.sslc:hover{
+    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+    transform: scale(1.1);
+}
+
+
+.about>.puc{
+    width: 25%;
+    height: 70%;
+    /* background-color: rgb(192, 192, 192); */
+    border: 0px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.about>.puc>img{
+    height: 40%;
+    width: 40%;
+}
+.about>.puc:hover{
+    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+    transform: scale(1.1);
+}
+
+
+.about>.be{
+    width: 25%;
+    height: 70%;
+    /* background-color: rgb(192, 192, 192); */
+    border: 0px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.about>.be>img{
+    height: 40%;
+    width: 40%;
+}
+.about>.be:hover{
+    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+    transform: scale(1.1);
+}
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .about > .sslc,
+    .about > .puc,
+    .about > .be {
+      width: 70%; /* Increase card width */
+      height: auto; /* Adjust height dynamically */
+      margin: 15px 0; /* Add space between cards */
+    }
+  
+    .about > .sslc > img,
+    .about > .puc > img,
+    .about > .be > img {
+      height: 30%; /* Resize images for tablets */
+      width: 30%;
+    }
+  }
+  
+  /* Mobile Styles (480px and below) */
+  @media screen and (max-width: 480px) {
+    .about {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .about > .sslc,
+    .about > .puc,
+    .about > .be {
+      width: 90%; /* Full width for mobile */
+      height: auto;
+      margin: 10px 0; /* Reduce spacing for smaller screens */
+    }
+  
+    .about > .sslc > img,
+    .about > .puc > img,
+    .about > .be > img {
+      height: 25%; /* Further reduce image size */
+      width: 25%;
+    }
+  }

@@ -1,0 +1,173 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.contact{
+    width: 100%;height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact>.cs1{
+    width: 35%;
+    height: 90%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact>.cs2{
+    width: 30%;
+    height: 90%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact>.cs2>form{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.045);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 50px;
+}
+
+.contact>.cs2>form>fieldset{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+    
+    padding: 10px;
+}
+label{
+    font-size: large;
+}
+input{
+    height: 30px;
+    font-size: 0.8rem;
+    width: 200px;
+    padding: 0px 5px;
+    outline: none;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border: 0px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+button:hover{
+    background-color: rgb(56, 171, 56);
+    color: white;
+}
+textarea{
+    width: 400px;
+    padding: 8px;
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+    resize: none;
+}
+
+
+.contact>.cs2>.sociallogo{
+    height: 10%;
+    width: 80%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact {
+      flex-direction: column; /* Stack sections vertically */
+      height: auto; /* Adjust height dynamically */
+      padding: 20px;
+    }
+  
+    .contact > .cs1,
+    .contact > .cs2 {
+      width: 80%; /* Reduce width for tablet */
+      height: auto; /* Adjust height dynamically */
+      margin: 10px 0;
+    }
+  
+    .contact > .cs2 > form {
+      width: 100%; /* Form fills container */
+      border-radius: 20px; /* Smaller border-radius */
+    }
+  
+    input {
+      width: 90%; /* Expand inputs to match form width */
+    }
+  
+    textarea {
+      width: 90%; /* Expand textarea to match form width */
+    }
+  
+    .contact > .cs2 > .sociallogo {
+      flex-wrap: wrap; /* Allow icons to wrap */
+    }
+  }
+  
+  /* Mobile Styles (480px and below) */
+  @media screen and (max-width: 480px) {
+    .contact {
+      flex-direction: column; /* Keep stacked layout */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .contact > .cs1,
+    .contact > .cs2 {
+      width: 100%; /* Full width for mobile */
+      height: auto;
+    }
+  
+    .contact > .cs2 > form {
+      width: 100%; /* Form takes up full width */
+      padding: 10px; /* Add padding for spacing */
+      border-radius: 15px;
+    }
+  
+    input {
+      width: 95%; /* Inputs nearly full-width */
+      font-size: 0.9rem; /* Slightly larger font */
+    }
+  
+    textarea {
+      width: 95%; /* Adjust textarea width */
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  
+    button {
+      width: 90px; /* Slightly smaller button */
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  
+    .contact > .cs2 > .sociallogo {
+      height: auto; /* Adjust height dynamically */
+      flex-direction: column; /* Stack icons vertically */
+      align-items: center;
+      gap: 10px; /* Add spacing between icons */
+    }
+  }

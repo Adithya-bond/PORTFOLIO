@@ -1,0 +1,66 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.exp{
+    height: 90vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.exp>.exp1{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid black;
+    border-radius: 40px;
+    padding: 20px;
+}
+.exp>.exp1>img{
+    width: 80%;
+    height: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .exp {
+      height: auto; /* Allow height to adjust dynamically */
+      padding: 20px;
+    }
+  
+    .exp > .exp1 {
+      width: 85%; /* Increase width for better use of space */
+      height: auto; /* Adjust height dynamically */
+      padding: 15px;
+    }
+  
+    .exp > .exp1 > img {
+      width: 90%; /* Increase image width slightly */
+      height: 25%; /* Adjust height for proportion */
+    }
+  }
+  
+  /* Mobile Styles (480px and below) */
+  @media screen and (max-width: 480px) {
+    .exp {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .exp > .exp1 {
+      width: 95%; /* Full width for mobile screens */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .exp > .exp1 > img {
+      width: 100%; /* Make image occupy full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
