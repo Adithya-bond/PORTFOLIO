@@ -15,6 +15,8 @@ const Navbar = () => {
             <Link to={'/about'}><h1 id='about'>About</h1></Link>
             {/* <li><h1 id='skills'>Skills</h1></li> */}
             <Link to={'/skills'}><h1 id='skills'>Skills</h1></Link>
+            <Link to={'/projects'}><h1 id='proj'>Projects</h1></Link>
+
             {/* <li ><h1 id='exp'>Experience</h1></li> */}
             <Link to={'/experience'}><h1 id='exp'>Experience</h1></Link>
             {/* <li ><h1 id='con'>Contact</h1></li> */}

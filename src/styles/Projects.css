@@ -1,0 +1,27 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.projects{
+    height: 300vh;
+    width: 100%;
+    /* background-color: bisque; */
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.projects>.project{
+    height: 30%;
+    width: 100%;
+    /* background-color: aqua; */
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects>.project>img{
+    height: 90%;
+    width: 100%;
+}
