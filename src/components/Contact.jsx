@@ -15,7 +15,7 @@ const Contact = () => {
     let data = {name,contact,email,comments};//always keep in mind to use payload in object format otherwise the key name will be stored as numbers
     function submit(){
         // e.preventDefault()
-        axios.post("http://localhost:2000/visitors",data)
+        axios.post("https://portfolio-backend-lzoq.onrender.com/visitors",data)
         .then((res)=>{
             // alert("data submitted")
             console.log(res.data);
@@ -27,7 +27,7 @@ const Contact = () => {
     console.log(data);
     
   return (
-    <div className='contact'>
+    <div className='contact' id='contactnav'>
         <div className="cs1">
             <img src={cntcoder} alt="" />
         </div>
@@ -48,11 +48,11 @@ const Contact = () => {
                 </fieldset> 
             </form> 
             <div className='sociallogo'> 
-                <a href="https://www.facebook.com/adithya.mh"><FacebookIcon fontSize='large' /></a> 
-                <a href="https://www.instagram.com/adithya_bond/profilecard/?igsh=eWF5OW5uaGFmenM1"><InstagramIcon fontSize='large'/></a> 
-                <a href="https://www.linkedin.com/in/adithya-kc-675a15172/" target='_blank'><LinkedInIcon fontSize='large'/></a> 
-                <a href="tel:+917337633150"><PhoneIcon fontSize='large'/></a> 
-                <a href="mailto:adithyamh@gmail.com" target='_blank'><EmailIcon fontSize='large'/></a> 
+                <a href="https://www.facebook.com/adithya.mh"><FacebookIcon fontSize='large' style={{ color: 'white' }} /></a> 
+                <a href="https://www.instagram.com/adithya_bond/profilecard/?igsh=eWF5OW5uaGFmenM1"><InstagramIcon fontSize='large' style={{ color: 'white' }}/></a> 
+                <a href="https://www.linkedin.com/in/adithya-kc-675a15172/" target='_blank'><LinkedInIcon fontSize='large' style={{ color: 'white' }}/></a> 
+                <a href="tel:+917337633150"><PhoneIcon fontSize='large' style={{ color: 'white' }}/></a> 
+                <a href="mailto:adithyamh@gmail.com" target='_blank'><EmailIcon fontSize='large' style={{ color: 'white' }}/></a> 
             </div> 
         </div> 
     </div> 

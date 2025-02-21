@@ -4,7 +4,7 @@ import alvas from '../assets/alvas.png'
 import jnnce from '../assets/jnnce.png'
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='aboutnav'>
       
       <div className='sslc'>
         <img src={alvas} alt="" /><br />

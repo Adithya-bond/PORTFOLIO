@@ -13,13 +13,14 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-     {/* <Navbar/>
+     <Navbar/>
      <Home/>
      <About/>
      <Skills/>
+     <Projects/>
      <Experience/>
-     <Contact/> */}
-     <BrowserRouter>
+     <Contact/>
+     {/* <BrowserRouter>
      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -30,7 +31,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/projects' element={<Projects/>}></Route>
       </Routes>
-     </BrowserRouter>
+     </BrowserRouter> */}
     </div>
   );
 }

@@ -11,8 +11,8 @@ import java from '../assets/java.png'
 import bootstrap from '../assets/bootstrap.png'
 const Skills = () => {
   return (
-    <div className='skills'>
-      <h1>Technologies i work with...</h1>
+    <div className='skills' id='skillsnav'>
+      <h3>Skills</h3>
       <div className="sk1">
         <div><img src={html} alt="" /></div>
         <div><img src={css} alt="" /></div>

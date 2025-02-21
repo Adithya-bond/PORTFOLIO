@@ -4,15 +4,16 @@
 .about{
     width: 100%;
     height: 90vh;
-    background-color:whitesmoke;
+    background-color:black;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    padding-top: 10vh;
 }
 .about>.sslc{
-    width: 25%;
+    width: 22%;
     height: 70%;
-    /* background-color: rgb(192, 192, 192); */
+    background-color: black;
     border: 0px solid black;
     border-radius: 20px;
     display: flex;
@@ -20,21 +21,28 @@
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
+    box-shadow: 0px 0px 50px blue;
+    color: white;
 }
 .about>.sslc>img{
-    height: 40%;
+    height: 35%;
     width: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
+    
 }
 .about>.sslc:hover{
-    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+    box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
 }
 
 
 .about>.puc{
-    width: 25%;
+    width: 22%;
     height: 70%;
-    /* background-color: rgb(192, 192, 192); */
+    background-color: black;
     border: 0px solid black;
     border-radius: 20px;
     display: flex;
@@ -42,21 +50,27 @@
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
+    box-shadow: 0px 0px 50px blue;
+    color: white;
 }
 .about>.puc>img{
-    height: 40%;
+    height: 35%;
     width: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
 }
 .about>.puc:hover{
-    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+    box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
 }
 
 
 .about>.be{
-    width: 25%;
+    width: 22%;
     height: 70%;
-    /* background-color: rgb(192, 192, 192); */
+    background-color: black;
     border: 0px solid black;
     border-radius: 20px;
     display: flex;
@@ -64,60 +78,67 @@
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
+    box-shadow: 0px 0px 50px blue;
+    color: white;
 }
 .about>.be>img{
-    height: 40%;
+    height: 35%;
     width: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
 }
 .about>.be:hover{
-    box-shadow: 0px 0px 40px rgb(93, 93, 93);
+  box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
 }
 
-/* Tablet Styles (768px and below) */
-@media screen and (max-width: 768px) {
-    .about {
-      flex-direction: column;
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .about {
+      flex-wrap: wrap;
       height: auto;
-      padding: 20px;
-    }
-  
-    .about > .sslc,
-    .about > .puc,
-    .about > .be {
-      width: 70%; /* Increase card width */
-      height: auto; /* Adjust height dynamically */
-      margin: 15px 0; /* Add space between cards */
-    }
-  
-    .about > .sslc > img,
-    .about > .puc > img,
-    .about > .be > img {
-      height: 30%; /* Resize images for tablets */
-      width: 30%;
-    }
+      padding: 5vh 0;
   }
-  
-  /* Mobile Styles (480px and below) */
-  @media screen and (max-width: 480px) {
-    .about {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .about > .sslc,
-    .about > .puc,
-    .about > .be {
-      width: 90%; /* Full width for mobile */
-      height: auto;
-      margin: 10px 0; /* Reduce spacing for smaller screens */
-    }
-  
-    .about > .sslc > img,
-    .about > .puc > img,
-    .about > .be > img {
-      height: 25%; /* Further reduce image size */
-      width: 25%;
-    }
+
+  .about > .sslc,
+  .about > .puc,
+  .about > .be {
+      width: 40%;
+      height: 60%;
+      margin-bottom: 20px;
   }
+
+  .about > .sslc > img,
+  .about > .puc > img,
+  .about > .be > img {
+      height: 30%;
+      width: 50%;
+  }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 5vh 0;
+  }
+
+  .about > .sslc,
+  .about > .puc,
+  .about > .be {
+      width: 80%;
+      height: 50%;
+      margin-bottom: 20px;
+  }
+
+  .about > .sslc > img,
+  .about > .puc > img,
+  .about > .be > img {
+      height: 25%;
+      width: 50%;
+  }
+}
