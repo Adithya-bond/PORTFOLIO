@@ -12,7 +12,7 @@ import bootstrap from '../assets/bootstrap.png'
 const Skills = () => {
   return (
     <div className='skills' id='skillsnav'>
-      <h3>Skills</h3>
+      <h1>Skills</h1>
       <div className="sk1">
         <div><img src={html} alt="" /></div>
         <div><img src={css} alt="" /></div>

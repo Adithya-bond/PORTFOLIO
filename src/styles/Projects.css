@@ -65,7 +65,7 @@
 .front>.blur{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.586);
+    background-color: rgba(0, 0, 0, 0.777);
     display: flex;
     justify-content: center;
     align-items: center;

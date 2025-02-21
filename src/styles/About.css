@@ -14,14 +14,14 @@
     width: 22%;
     height: 70%;
     background-color: black;
-    border: 0px solid black;
+    border: 1px solid white;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
-    box-shadow: 0px 0px 50px blue;
+    /* box-shadow: 0px 0px 50px blue; */
     color: white;
 }
 .about>.sslc>img{
@@ -36,6 +36,7 @@
 .about>.sslc:hover{
     box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
+    border: 1px solid black;
 }
 
 
@@ -43,14 +44,14 @@
     width: 22%;
     height: 70%;
     background-color: black;
-    border: 0px solid black;
+    border: 1px solid white;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
-    box-shadow: 0px 0px 50px blue;
+    /* box-shadow: 0px 0px 50px blue; */
     color: white;
 }
 .about>.puc>img{
@@ -64,6 +65,7 @@
 .about>.puc:hover{
     box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
+    border: 1px solid black;
 }
 
 
@@ -71,14 +73,14 @@
     width: 22%;
     height: 70%;
     background-color: black;
-    border: 0px solid black;
+    border: 1px solid white;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: transform 0.3s ease;
-    box-shadow: 0px 0px 50px blue;
+    /* box-shadow: 0px 0px 50px blue; */
     color: white;
 }
 .about>.be>img{
@@ -92,6 +94,7 @@
 .about>.be:hover{
   box-shadow: 0px 0px 50px blue;
     transform: scale(1.1);
+    border: 1px solid black;
 }
 
 /* Tablet View (max-width: 1024px) */

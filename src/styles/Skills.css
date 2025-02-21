@@ -24,17 +24,18 @@
 .skills>.sk1>div{
     height: 100%;
     width: 15%;
-    border: 1px solid black;
-    border-radius: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:black;
-    box-shadow: 0px 0px 30px blue;
+    
 }
 .skills>.sk1>div:hover{
   transform: scale(1.1);
-    filter: drop-shadow(0px 0px 20px black);
+  box-shadow: 0px 0px 30px blue;
+  border: 1px solid black;
 }
 .skills>.sk1>div>img{
     height: 70%;
@@ -62,18 +63,19 @@
 .skills>.sk2>div{
     height: 100%;
     width: 15%;
-    border: 1px solid black;
-    border-radius: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
     display: flex;
     justify-content:center;
     align-items: center;
     /* background-color: whitesmoke; */
     background-color:black;
-    box-shadow: 0px 0px 30px blue;
+    
 }
 .skills>.sk2>div:hover{
   transform: scale(1.1);
-    /* filter: drop-shadow(0px 0px 20px black); */
+  border: 1px solid black;
+  box-shadow: 0px 0px 30px blue;
 }
 .skills>.sk2>div>img{
     height: 70%;
@@ -100,18 +102,19 @@
 .skills>.sk3>div{
     height: 100%;
     width: 15%;
-    border: 1px solid black;
-    border-radius: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: whitesmoke; */
     background-color:black;
-    box-shadow: 0px 0px 30px blue;
 }
 .skills>.sk3>div:hover{
   transform: scale(1.1);
-    /* filter: drop-shadow(0px 0px 20px black); */
+  border: 1px solid black;
+  box-shadow: 0px 0px 30px blue;
+
 }
 .skills>.sk3>div>img{
     height: 70%;
@@ -127,7 +130,7 @@
     transform: scale(1.4);
     
 } */
-h3{
+h1{
   color: white;
 }
 
