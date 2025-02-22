@@ -21,6 +21,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    font-size: 2vh;
 }
 .projects>a>.card1:hover {
     transform: rotateY(180deg);
@@ -31,6 +32,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    font-size: 2vh;
 }
 .projects>a>.card2:hover {
     transform: rotateY(180deg);
@@ -41,6 +43,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    font-size: 2vh;
 }
 .projects>a>.card3:hover {
     transform: rotateY(180deg);
@@ -76,61 +79,6 @@
     border-radius: 10px;
     /* color: whitesmoke; */
 }
-/* Tablet View (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
-    .projects {
-        height: auto;
-        padding: 5vh 0;
-    }
-
-    .card1,
-    .card2,
-    .card3 {
-        width: 30%;
-        height: 50%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Mobile View (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .projects {
-        flex-direction: column;
-        height: auto;
-        padding: 5vh 0;
-    }
-
-    .card1,
-    .card2,
-    .card3 {
-        width: 80%;
-        height: 40vh;
-        margin-bottom: 20px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #card1{
     background-image: url(../assets/todolist.jpeg);
@@ -149,7 +97,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
+
 }
 
+/* Tablet View */
+@media (max-width: 1024px) {
+    .projects {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .projects > a {
+        width: 40%;
+        height: 50vh;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .projects > a {
+        width: 80%;
+        height: 40vh;
+    }
+}
 
 

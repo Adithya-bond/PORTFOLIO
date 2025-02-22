@@ -43,7 +43,7 @@
     display: flex;
     justify-content:space-evenly;
     align-items:center;
-    font-size:small;
+    font-size: 2vh;
     transition: transform 0.3s ease;
     /* color: white; */
     /* background-color: aqua; */
@@ -102,10 +102,10 @@
   }
 
   .navbar .sec2 ul {
-      gap: 10px; /* Reduce spacing between menu items */
+      gap: 5px; /* Reduce spacing between menu items */
   }
 
   .navbar .sec2 ul a {
-      font-size: 0.5rem; /* Further reduce font size for mobile */
+      font-size: 1.5vw; /* Further reduce font size for mobile */
   }
 }
